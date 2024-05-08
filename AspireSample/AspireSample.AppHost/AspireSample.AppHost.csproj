@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAspireHost>true</IsAspireHost>
+    <UserSecretsId>7df8e058-ae18-447c-9d4e-65a0068a7493</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AspireSample.ApiService\AspireSample.ApiService.csproj" />
+    <ProjectReference Include="..\AspireSample.Web\AspireSample.Web.csproj" />
+    <ProjectReference Include="..\TodoApi\TodoApi.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="8.0.0-preview.7.24251.11" />
+    <PackageReference Include="Aspire.Hosting.Kafka" Version="8.0.0-preview.7.24251.11" />
+    <PackageReference Include="Aspire.Hosting.MongoDB" Version="8.0.0-preview.7.24251.11" />
+    <PackageReference Include="Aspire.Hosting.MySql" Version="8.0.0-preview.7.24251.11" />
+    <PackageReference Include="Aspire.Hosting.PostgreSQL" Version="8.0.0-preview.7.24251.11" />
+    <PackageReference Include="Aspire.Hosting.Redis" Version="8.0.0-preview.7.24251.11" />
+  </ItemGroup>
+
+</Project>
