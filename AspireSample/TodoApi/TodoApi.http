@@ -4,3 +4,18 @@ GET {{TodoApi_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
+
+POST {{TodoApi_HostAddress}}/user/
+Content-Type: application/json
+
+{
+  "firstName": "test3",
+  "lastName": "test3",
+  "internal": true
+}
+###
+
+GET {{TodoApi_HostAddress}}/users?internalOnly=true
+Accept: application/json
+
+###

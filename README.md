@@ -1,4 +1,12 @@
+# ASPIRE Demo2
 
+## Tech Stack
+- [x] aspire
+- [x] podman
+- [x] marten
+
+- ![alt text](./doc/aspire-demo.gif)
+- 
 ```dotnetcli
 
 $ dotnet workload update
@@ -18,8 +26,8 @@ $ podman ps
 
 $ dotnet new aspire-starter --use-redis-cache --output AspireSample    
 
-# 
-$ dotnet run --project AspireSample/AspireSample.AppHost
+# cd AspireSample
+$ dotnet run --project AspireSample.AppHost
 
 $ dotnet add AspireSample.AppHost package Aspire.Hosting.PostgreSQL --prerelease    
 
@@ -34,4 +42,7 @@ $ dotnet new webapi -o TodoApi
 $ dotnet sln add .\TodoApi\
 
 $ dotnet add .\TodoApi\ package Marten
+
+
+
 ```
